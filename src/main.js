@@ -2,22 +2,15 @@ import Vue from 'vue'
 import router from './router'
 import store from './store'
 import App from './App.vue'
-import Vuex from 'vuex'
+import Axios from 'axios'
 
-import 	VueResourse from 'vue-resource'
-Vue.use(VueResourse)
-
-// 阿里字体图标
-import './static/css/neat-min.css'
-import './static/css/iconfont.css'
+Vue.prototype.$http = Axios // 类似于vue-resource的调用方法，之后可以在实例里直接用this.$http.get()等
 
 // ui框架
-import MintUI from 'mint-ui'
-import 'mint-ui/lib/style.css'
-Vue.use(MintUI)
-
-//调用手机底层
-import '../static/js/summer.min.js'
+import MuseUI from 'muse-ui'
+import 'muse-ui/dist/muse-ui.css'
+import './public/theme.less'
+Vue.use(MuseUI)
 
 new Vue({
     el: "#app",
