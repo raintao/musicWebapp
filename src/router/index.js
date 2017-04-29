@@ -4,7 +4,7 @@ import App from '../App'
 
 
 // import mainMsg  from '../pages/main/msg.vue'
-const mainWork = r => require.ensure([], () => r(require('../pages/index.vue')),'mainWork')
+const mainWork = r => require.ensure([], () => r(require('../pages/index.vue')))
 
 
 

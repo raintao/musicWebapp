@@ -23,10 +23,17 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
+      'muse-components': 'muse-ui/src',
       '@': resolve('src'),
     }
   },
   module: {
+    loaders: [
+     {
+       test: /muse-ui.src.*?js$/,
+       loader: 'babel'
+     }
+    ],
     rules: [
       // {
       //   test: /\.(js|vue)$/,
@@ -37,6 +44,10 @@ module.exports = {
       //     formatter: require('eslint-friendly-formatter')
       //   }
       // },
+      {
+        test: /muse-ui.src.*?js$/,
+        loader: 'babel-loader'
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
