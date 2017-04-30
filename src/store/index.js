@@ -29,6 +29,13 @@ const state={
       'location': "http://qnm.hunliji.com/n-LvZJP0teoKD9I40PDyXmbhuJQ=/FuzaaiqOdRXrzwJXLDUCHZRY6g0T.mp3",
       'album': ''
     },{
+      'id':239188,
+      'name':"没那么简单",
+      'singer':"黄小琥",
+      'albumPic':"https://p1.music.126.net/yFQShP8JdQ824I_Cm4tkOg==/47278999995384.jpg",
+      'location':"http://m7.music.126.net/20170430222856/6a5e4d8a8e59edfb4451089374135be3/ymusic/7e7b/8177/968e/eadd88037fb647cd6aa61782e9362ef2.mp3",
+      'album':''
+    },{
       'id':109196,
       'name':"想太多",
       'singer':"李玖哲",
