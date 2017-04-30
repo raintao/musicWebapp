@@ -19,6 +19,7 @@ export default{
   setAudioIndex (state, index) {
     state.audio = state.songList[index]
     state.currentIndex = index + 1
+    console.log(state.audio);
   },
   removeAudio (state, index) {
     state.songList.splice(index, 1)
