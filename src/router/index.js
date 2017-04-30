@@ -4,7 +4,8 @@ import App from '../App'
 
 
 // import mainMsg  from '../pages/main/msg.vue'
-const player = r => require.ensure([], () => r(require('../pages/index.vue')),'player')
+const player = r => require.ensure([], () =>r(require('../pages/index.vue')),'player')
+const playerDetail = r => require.ensure([], () =>r(require('../pages/playerDetail')),'playerDetail')
 
 
 
@@ -15,7 +16,12 @@ const routes = [{
   path:'/',component:App,
   children:[
     // { path: "",redirect:"/player" },
-    { path: "/player",component: player}
+    { path: "/player",component: player},
+    {
+      name: 'playerDetail',
+      path: '/playerDetail/:id',
+      component:playerDetail
+    }
   ]
 }]
 
