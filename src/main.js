@@ -12,10 +12,10 @@ import './public/reset.css'
 // 全部加载ui框架
 
 // muse-ui
-// import MuseUI from 'muse-ui'
-// import 'muse-ui/dist/muse-ui.css'
-// import './public/theme.less'
-// Vue.use(MuseUI)
+import MuseUI from 'muse-ui'
+import 'muse-ui/dist/muse-ui.css'
+import './public/theme.less'
+Vue.use(MuseUI)
 
 // mint-ui
 // import MintUI from 'mint-ui';
@@ -25,22 +25,22 @@ import './public/reset.css'
 
 // 按需加载
 // muse-ui  base.less加载基础的样式
-import 'muse-components/styles/base.less'
-import appBar from 'muse-components/appBar'
-import iconButton from 'muse-components/iconButton'
-import flatButton from 'muse-components/flatButton'
-import avatar from 'muse-components/avatar'
-import {bottomNav, bottomNavItem} from 'muse-components/bottomNav'
-import {retina} from 'muse-components/utils'
+// import 'muse-components/styles/base.less'
+// import appBar from 'muse-components/appBar'
+// import iconButton from 'muse-components/iconButton'
+// import flatButton from 'muse-components/flatButton'
+// import avatar from 'muse-components/avatar'
+// import {bottomNav, bottomNavItem} from 'muse-components/bottomNav'
+// import {retina} from 'muse-components/utils'
 
 // retina() // 1px 处理方案
 
-Vue.component(appBar.name, appBar)
-Vue.component(iconButton.name, iconButton)
-Vue.component(flatButton.name, flatButton)
-Vue.component(avatar.name, avatar)
-Vue.component(bottomNav.name, bottomNav)
-Vue.component(bottomNavItem.name, bottomNavItem)
+// Vue.component(appBar.name, appBar)
+// Vue.component(iconButton.name, iconButton)
+// Vue.component(flatButton.name, flatButton)
+// Vue.component(avatar.name, avatar)
+// Vue.component(bottomNav.name, bottomNav)
+// Vue.component(bottomNavItem.name, bottomNavItem)
 
 
 

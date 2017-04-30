@@ -14,7 +14,7 @@ const routes = [{
 
   path:'/',component:App,
   children:[
-    { path: "",redirect:"/player" },
+    // { path: "",redirect:"/player" },
     { path: "/player",component: player}
   ]
 }]
