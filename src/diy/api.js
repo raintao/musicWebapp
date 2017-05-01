@@ -12,5 +12,8 @@ export default {
   },
   getSong (id) {
     return _baseUrl + '?type=url&id=' + id
+  },
+  getPlayListByWhere (cat, order, offset, total, limit) {
+    return _baseUrl + '?type=topPlayList&cat=' + cat + '&offset=' + offset + '&limit=' + limit
   }
 }

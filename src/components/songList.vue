@@ -43,7 +43,6 @@ export default {
       this.$store.commit('setAudioIndex', index)
     },
     remove (index) {
-      console.log(index)
       this.$store.commit('removeAudio', index)
     }
   },

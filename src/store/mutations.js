@@ -19,15 +19,27 @@ export default{
   setAudioIndex (state, index) {
     state.audio = state.songList[index]
     state.currentIndex = index + 1
-    console.log(state.audio);
+    console.log("当前播放的歌曲信息",state.audio);
+    console.log("当前播放的是第"+state.currentIndex+"首歌曲");
   },
   removeAudio (state, index) {
+    console.log(index);
+    console.log(state.songList);
+    console.log(state.currentIndex);
     state.songList.splice(index, 1)
-    if (index === state.songList.length) {
-      index--
+    console.log(state.songList);
+    console.log(state.currentIndex);
+    // 如果删除的是当前歌曲
+    if(index==state.currentIndex-1){
+      // 如果删除的是列表的最后一首就播放第一首
+      if (index === state.songList.length) {
+        index=0
+      }
+      // 播放顶替被删除歌曲位置的歌曲
+      state.audio = state.songList[index]
+      state.currentIndex = index + 1
     }
-    state.audio = state.songList[index]
-    state.currentIndex = index + 1
+
     if (state.songList.length === 0) {
       state.audio = {
         'id': 0,
