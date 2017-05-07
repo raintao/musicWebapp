@@ -1,5 +1,6 @@
 import {ROUTER_QUERY} from './mutation-types'
-
+import Axios from 'axios'
+import api from '../diy/api'
 export default{
   routerQuery({commit},query){
     commit(ROUTER_QUERY,query)

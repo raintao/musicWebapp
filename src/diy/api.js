@@ -15,5 +15,17 @@ export default {
   },
   getPlayListByWhere (cat, order, offset, total, limit) {
     return _baseUrl + '?type=topPlayList&cat=' + cat + '&offset=' + offset + '&limit=' + limit
+  },
+  getLrc (id) {
+    return _baseUrl2 + '?type=lyric&id=' + id
+  },
+  getPlayListDetail (id) {
+    return _baseUrl2 + '?type=playlist&id=' + id
+  },
+  getMv (id) {
+    return _baseUrl2 + '?type=mv&id=' + id
+  },
+  search (words) {
+    return _baseUrl2 + '?type=search&s=' + words
   }
 }

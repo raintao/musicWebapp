@@ -16,8 +16,9 @@
       </div>
       <div class="wrapper">
       <div class="g-title song-list">推荐歌单
-        <!-- <router-link :to="{path: '/player/songList'}">更多></router-link> -->
+        <router-link :to="{path: '/player/playList'}">更多></router-link>
       </div>
+
       <mu-flexbox wrap="wrap" justify="space-around" class="box" :gutter="0">
         <mu-flexbox-item basis="28%" class="item" :key="item.id" v-for="item in playList">
           <router-link :to="{name: 'playListDetail',params: { id: item.id, name: item.name, coverImg: item.coverImgUrl, creator: item.creator, count: item.playCount, desc: item.description }}">
@@ -28,7 +29,7 @@
         </mu-flexbox-item>
       </mu-flexbox>
         <div class="g-title mv">推荐MV
-          <!-- <router-link :to="{}">更多></router-link> -->
+          <router-link :to="{}">更多></router-link>
         </div>
         <mu-flexbox wrap="wrap" justify="space-around" class="box" :gutter="0">
           <mu-flexbox-item basis="40%" class="mv-item">
@@ -204,8 +205,10 @@ export default {
   methods: {
     get () {
       this.$http.get(api.getPlayListByWhere('全部', 'hot', 0, true, 6)).then((res) => {
+        console.log(res.data.playlists);
         this.isloading = false
         this.playList = res.data.playlists
+
       })
     }
   },

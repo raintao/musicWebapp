@@ -7,7 +7,8 @@ import App from '../App'
 const player = r => require.ensure([], () =>r(require('../pages/index.vue')),'player')
 const playerDetail = r => require.ensure([], () =>r(require('../pages/playerDetail')),'playerDetail')
 const rage = r => require.ensure([], () =>r(require('../pages/rage')),'rage')
-const songList = r => require.ensure([], () =>r(require('../pages/songList')),'songList')
+const playList = r => require.ensure([], () =>r(require('../pages/playList')),'playList')
+const playListDetail = r => require.ensure([], () =>r(require('../pages/playListDetail')),'playListDetail')
 
 
 
@@ -17,11 +18,13 @@ const routes = [{
 
   path:'/',component:App,
   children:[
-    { path: "",redirect:"/player" },
+    { path: "",redirect:"/player/rage" },
     { path: "/player",component: player,
       children:[
+        // 流行
         {path:'rage',component:rage},
-        {path:'songList',component:songList}
+        // 全部歌单
+        {path:'playList',component:playList}
 
       ]
     },
@@ -29,8 +32,11 @@ const routes = [{
       name: 'playerDetail',
       path: '/playerDetail/:id',
       component:playerDetail
-    }
-  ]
+    }, {
+    path: '/playListDetail/:id',
+    name: 'playListDetail',
+    component: playListDetail
+  }]
 }]
 
 export default new Router({
