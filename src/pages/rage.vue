@@ -7,10 +7,10 @@
       <div class="container" v-show="!isloading">
       <div id="slider">
         <swiper :options="swiperOption">
-          <swiper-slide><img src="/static/banner1.jpg" class="banner-item"  alt=""></swiper-slide>
-          <swiper-slide><img src="/static/banner2.jpg" class="banner-item"  alt=""></swiper-slide>
-          <swiper-slide><img src="/static/banner3.jpg" class="banner-item"  alt=""></swiper-slide>
-          <swiper-slide><img src="/static/banner4.jpg" class="banner-item"  alt=""></swiper-slide>
+          <swiper-slide><img src="../../static/banner1.jpg" class="banner-item"  alt=""></swiper-slide>
+          <swiper-slide><img src="../../static/banner2.jpg" class="banner-item"  alt=""></swiper-slide>
+          <swiper-slide><img src="../../static/banner3.jpg" class="banner-item"  alt=""></swiper-slide>
+          <swiper-slide><img src="../../static/banner4.jpg" class="banner-item"  alt=""></swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
       </div>
@@ -28,7 +28,7 @@
           </router-link>
         </mu-flexbox-item>
       </mu-flexbox>
-        <div class="g-title mv">推荐MV
+        <!-- <div class="g-title mv">推荐MV
           <router-link :to="{}">更多></router-link>
         </div>
         <mu-flexbox wrap="wrap" justify="space-around" class="box" :gutter="0">
@@ -52,7 +52,7 @@
             <div class="mv-name">Skin to sking</div>
             <div class="mv-author">鹿晗</div>
           </mu-flexbox-item>
-        </mu-flexbox>
+        </mu-flexbox> -->
       </div>
       </div>
     </div>

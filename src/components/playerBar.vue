@@ -54,9 +54,9 @@ export default {
       'playNext'
     ]),
     canPlaySong () {
-      this.$store.commit('closeLoading')
-      this.$store.commit('play')
-      document.getElementById('audioPlay').play()
+      // this.$store.commit('closeLoading')
+      // this.$store.commit('play')
+      // document.getElementById('audioPlay').play()
     },
     toggleStatus () {
       if (this.playing) {
