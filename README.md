@@ -10,14 +10,15 @@ vue2高仿网易云音乐
                       $ npm run dev   
                       
 
-####   文件路径介绍：
-              #static文件夹主要放一些图片,第三方文件。src中的目录如下：
-                |-- App.vue  
-                |-- components  单文件组件文件夹
-                |-- diy         封装的api 接口等
-                |-- main.js     入口文件
-                |-- pages       页面
-                |-- public      css重置、统一制定主题、样式等css文件
-                |-- router      路由文件
-                |-- store       vuex
-
+####   文件路径介绍：   
+           #static文件夹主要放一些图片,第三方文件。src中的目录如下：   
+              
+                          |-- App.vue  
+                          |-- components  单文件组件文件夹
+                          |-- diy         封装的api 接口等
+                          |-- main.js     入口文件
+                          |-- pages       页面
+                          |-- public      css重置、统一制定主题、样式等css文件
+                          |-- router      路由文件
+                          |-- store       vuex
+  
